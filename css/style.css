@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #15193867;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-button {
+    background-color: #15193867;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background-color: #191919;
+}
+
+h1 {
+    color: white;
+    font-size: xx-large;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+p {
+    color: white;
+
+}
+
+/* inicio */
+header {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand img {
+    display: flex;
+    width: 400px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-item.active {
+    height: 350px;
+}
+
+.carousel img {
+    height: 100%
+}
+
+.navbar-brand img {
+    width: 300px;
+    height: 60px;
+}
+
+.hero-main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+/* media queries al section del main */
+@media (min-width:992px) {
+    .hero-main {
+        display: flex;
+    }
+}
+
+.hero-main div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.hero-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(78, 6, 6);
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.futer {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.futer li {
+    padding-right: 10px;
+}
+
+/* fin de inicio */
+/* About */
+.abaut {
+    display: grid;
+    text-align: center;
+    background-image: url(../images/id8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.historia {
+    display: flex;
+    vertical-align: top;
+    width: 100%;
+    background-color: #0202028a;
+
+}
+
+.historia article {
+    width: 100%;
+    padding: 20px;
+    white-space: break-spaces;
+}
+
+.historia p {
+    padding: 20px;
+    text-align: center;
+}
+
+.integrantes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background-color: #0202028a;
+}
+
+.integrantes article {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* contacto */
+.contacts {
+    background-image: url(../images/idconcert2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+
+
+}
+
+form div {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input,
+textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    border-radius: 18px;
+}
+
+.btnformulario {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 18px;
+}
+
+
+.COPY {
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* musica */
+.musica {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'disco1 disco2 disco3'
+        'disco4 disco5 disco6'
+        'disco7 disco8 disco9';
+    padding: 10px;
+    gap: 5px;
+}
+
+.disc {
+    display: flex;
+    background-color: #103ac411;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 25px;
+    border: 2px solid #103ac411;
+    border-radius: 30px;
+}
+
+.sp1 {
+    grid-area: disco1;
+}
+
+.sp2 {
+    grid-area: disco2;
+}
+
+.sp3 {
+    grid-area: disco3;
+}
+
+.sp4 {
+    grid-area: disco4;
+}
+
+.sp5 {
+    grid-area: disco5;
+}
+
+.sp6 {
+    grid-area: disco6;
+}
+
+.sp7 {
+    grid-area: disco7;
+}
+
+.sp8 {
+    grid-area: disco8;
+}
+
+.sp9 {
+    grid-area: disco9;
+}
+
+/* galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'img1 img1 img3 img3'
+        'img2 img8 img8 img6'
+        'img5 img7 img4 img6';
+    padding: 2px;
+    gap: 5px;
+}
+
+.fotos {
+    display: flex;
+    border: 2px solid rgb(77, 20, 20);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    max-height: 100%;
+}
+
+.fotos img {
+    border: 2px solid rgb(49, 8, 8);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.i1 {
+    grid-area: img1;
+}
+
+.i2 {
+    grid-area: img2;
+}
+
+.i3 {
+    grid-area: img3;
+}
+
+.i4 {
+    grid-area: img4;
+}
+
+.i5 {
+    grid-area: img5;
+}
+
+.i6 {
+    grid-area: img6;
+}
+
+.i7 {
+    grid-area: img7;
+}
+
+.i8 {
+    grid-area: img8;
+}
+
+.galeria ul li {
+    padding: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+    header {
+        height: 120px;
+    }
+
+    .navegacion {
+        height: 100%;
+    }
+
+    .navegacion ul {
+        display: none;
+    }
+}
