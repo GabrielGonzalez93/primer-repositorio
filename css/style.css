@@ -201,10 +201,29 @@ footer {
     justify-content: center;
 
 }
-@media (max-width:830px){
-    .integrantes {
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.accordion-button {
+    background-color: #191919;
+    font-weight: bold;
+    color: #fff;
+}
+.accordion-item {
+    width: 189px;
+    background-color: #191919;
+    border: none;
+    color:#fff;
+    font-weight: bold;
+}
+@media (max-width:890px){
+    .accordion {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
     }
 }
 /* contacto */
